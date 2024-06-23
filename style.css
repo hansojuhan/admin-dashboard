@@ -19,18 +19,25 @@ body {
 
 .sidebar {
     border: 2px solid red;
-
     grid-area: 1 / 1 / 3 / 2;
+
+    /* Sections for logo, main and bottom links */
+    display: grid;
+
+    grid-template: 80px 1fr 1fr 1fr / 1fr;
 }
 
 .header {
     border: 2px solid yellow;
-
     grid-area: 1 / 2 / 2 / 3;
 }
 
 .main-content {
     border: 2px solid blue;
-
     grid-area: 2 / 2 / 3 / 3;
+}
+
+/* Sidebar stuff */
+#logo {
+    grid-area: 1 / 1 / 2 / 2;
 }
