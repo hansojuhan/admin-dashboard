@@ -28,6 +28,11 @@ body {
 
     background-color: rgb(26 146 213);
     color: white;
+
+    gap: 1rem;
+
+    /* Some top padding */
+    padding-top: 1rem;
 }
 
 .header {
@@ -43,6 +48,21 @@ body {
 /* Sidebar stuff */
 #logo {
     grid-area: 1 / 1 / 2 / 2;
+
+    display: flex;
+    
+    height: 3rem;
+    padding: 0 1.6rem;
+
+    justify-content: start;
+    align-items: center;
+
+    gap: 0.2rem;
+}
+
+#logo img {
+    height: 100%;
+    width: 20%;
 }
 
 /* Link */
