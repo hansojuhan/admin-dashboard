@@ -19,8 +19,6 @@ body {
 }
 
 .sidebar {
-    border: 2px solid red;
-    
     display: grid;
     grid-template: 80px 1fr 1fr 1fr / 1fr;
     
@@ -36,12 +34,10 @@ body {
 }
 
 .header {
-    border: 2px solid yellow;
     grid-area: 1 / 2 / 2 / 3;
 }
 
 .main-content {
-    border: 2px solid blue;
     grid-area: 2 / 2 / 3 / 3;
 }
 
@@ -68,16 +64,25 @@ body {
 /* Link */
 .link {
     display: flex;
-    
-    height: 3rem;
-    padding: 0 1.6rem;
-
     justify-content: start;
     align-items: center;
-
     gap: 0.2rem;
-}
     
+    height: 3rem;
+    
+    padding: 0 1.6rem;
+}
+
+.link:hover {
+    background-color: rgb(67 166 236);
+    cursor: pointer;
+    transition: background-color 100ms ease-in-out;
+}
+
+.link:active {
+    background-color: rgb(131, 202, 254);
+}
+
 .link-icon {
     width: 20%;
     height: 60%;
