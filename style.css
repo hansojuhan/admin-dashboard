@@ -360,3 +360,48 @@ button:active {
 .announcement:last-child {
     border: none;
 }
+
+/* Trending section */
+#trending-section {
+}
+
+#trending-content {
+    display: flex;
+    flex-direction: column;
+
+    
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); /* Add drop shadow */
+
+    height: auto;
+    width: 100%;
+}
+
+
+.trending-row {
+    height: 3rem;
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: auto;
+
+    padding: 0 1rem;
+    margin: 1rem 0;
+}
+
+.trending-row img {
+    height: 100%;
+    margin: 0 1rem 0 0;
+}
+
+.trending-title {
+    margin: 0;
+}
+
+.trending-subtitle {
+    margin: 0;
+    font-size: small;
+    color: gray;
+}
